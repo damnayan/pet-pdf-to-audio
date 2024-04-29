@@ -1,13 +1,18 @@
 # pet-pdf-to-audio
-This Python-based project, "PDF to Audio Converter," is designed to enhance accessibility and user convenience by transforming any PDF document into an audible format. Leveraging powerful Python libraries, this tool is ideal for users who prefer auditory learning or require audio assistance for reading texts.
+The PDF to Audio Converter is a Python application designed to transform PDF documents into spoken audio files. This tool leverages the PyPDF2 library to read PDF documents and the pyttsx3 library for converting text to speech. It's especially useful for visually impaired users, auditory learners, or anyone who needs to consume written content on the go.
+
 Key Features:
 
-PDF Reading: Automatically parses text from PDF files using Python libraries like PyPDF2 or pdfplumber.
-Text-to-Speech: Converts extracted text into speech using a text-to-speech library such as gTTS (Google Text-to-Speech) for natural sounding voice output.
-Customizable Audio Output: Users can adjust the speech rate, volume, and voice accents to suit their preferences.
-Batch Processing: Supports converting multiple PDF files to audio format in a single session, making it efficient for handling bulk conversions.
+PDF Text Extraction: Efficiently reads and extracts text from any PDF file using PyPDF2.
+Audio Conversion: Converts the extracted text into spoken audio, allowing users to listen to the content of PDF documents.
+Customizable Audio Output: Utilizes the pyttsx3 library, which supports changing voice properties such as speech rate and volume.
+File Handling: Generates an audio file from the PDF text, saving it conveniently as an MP3 file for easy playback on various devices.
 Technologies Used:
 
 Python 3.x
-Libraries: PyPDF2/pdfplumber for PDF text extraction and gTTS/pyttsx3 for generating audio.
-This tool is open-source, and I welcome contributions and suggestions to make it more versatile and user-friendly. Feel free to fork this repository and submit your pull requests or create issues for any bugs or new features you'd like to see.
+Libraries: PyPDF2, pyttsx3
+How to Use:
+
+Ensure Python and the required libraries (PyPDF2, pyttsx3) are installed on your system.
+Place the Python script and the PDF file in the same directory.
+Run the script. The PDF file will be read, and its content will be converted into an audio file named story.mp3.
